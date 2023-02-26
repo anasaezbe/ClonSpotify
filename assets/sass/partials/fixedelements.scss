@@ -1,0 +1,77 @@
+.spotify_app {
+    @apply static;
+    
+    //max-width: 420px;
+    .spotify_fixed_parts {
+        @apply absolute bottom-0 z-10;
+        max-width: 388px; //Esto no deberia ser así pero es que si pongo w-full se me va a no se donde
+        width: 100%;
+        .footer_navbar{
+            @apply bg-[#282828];
+     
+             .listening_now{
+                .progress_line{
+                    @apply h-[2px] bg-zinc-800;
+                }
+                .listening_now_info{
+                    @apply flex flex-row justify-between;
+                    @apply pr-4;
+                    .listening_mow_music{
+                        @apply flex flex-row gap-2;
+                        .listening_album{
+                            img{
+                                @apply h-14;
+                            }
+                        }
+                        .listening_info{
+                            @apply flex flex-col justify-center;
+                            .music_title{
+                                @apply text-sm text-zinc-200;
+                                
+
+    
+                            }
+                            .music_author{
+                                @apply text-sm text-zinc-400;
+                            }
+                        }
+                    }
+                    .listening_now_ctas{
+                        @apply flex flex-row content-center items-center gap-3;
+                        .heart{
+                            @apply text-base;
+                        }
+                        .play{
+                            @apply text-2xl;
+                        }
+                    }
+                }
+                .separation_line{
+                    @apply h-[2px] bg-black;
+                }
+               
+             }
+             .navbar{
+                @apply py-2 px-8;
+                
+                 .icons_list{
+                     @apply flex place-content-between;
+                     .option{
+                         @apply flex flex-col;
+                         @apply  items-center justify-center;
+                         @apply w-20;
+                         .icon{
+         
+                         }
+                         p{
+                            @apply text-xs;
+         
+                         }
+                     }
+                 }
+             }
+         }
+    }
+
+    
+}

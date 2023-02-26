@@ -1,0 +1,134 @@
+@import "lib/vars";
+@import "lib/mixins";
+@import "lib/reset";
+@import "lib/fontface";
+@import "lib/keyframes";
+@import "lib/bootstrap-icons"; // https://icons.getbootstrap.com/
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*
+* {
+  border: 1px solid pink;
+}
+*/
+
+:root {
+  --font-base: $font_size_base;
+  --font-leading-base: $line_height_base;
+  --base-color: $body_color;
+}
+
+html,
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: var(--font-base);
+  line-height: var(--font-leading-base);
+  color: var(--base-color);
+  min-height: 100vh;
+}
+
+body {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-family: sans-serif;
+  background-color: rgb(37, 37, 37);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+#app {
+  max-width: 420px;
+  width: 100%;
+  height: 100vh;
+  max-height: 768px;
+  @apply bg-zinc-900;
+  padding: 0.5rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+
+}
+
+//EL PAGE PARA LOS COMPONENTES
+
+@layer components { //componentes que van en todo el html
+  .card_album_b_vertical {
+    .image {
+      @apply w-32 mb-2;
+    }
+    .description {
+      @apply flex-col gap-4;
+      .title_album {
+        @apply text-sm text-zinc-100;
+      }
+      .album_info {
+        @apply flex gap-1;
+        @apply text-xs text-zinc-400;
+        .type {
+        }
+        .dot {
+        }
+        .author {
+        }
+      }
+    }
+    &.recomendation { 
+      .description {
+        .title_album{
+          @apply hidden;
+        }
+        .album_info {
+          
+          .type {
+            @apply hidden;
+          }
+          .dot {
+            @apply hidden;
+          }
+          .author {
+          }
+        }
+      }
+    }
+    
+  }
+  .horizontal_card {
+    @apply flex flex-row gap-4 items-center;
+    .horizontal_card_image {
+      @apply w-16;
+      img {
+        @apply flex-shrink-0;
+      }
+    }
+    .horizontal_card_description {
+      @apply flex flex-col;
+      .card_title {
+        @apply font-semibold text-base;
+      }
+      .card_subtitle {
+        @apply text-xs text-zinc-400;
+      }
+    }
+    &.artist {
+        .horizontal_card_image{
+            img {
+                @apply rounded-full;
+              }
+        }
+        .horizontal_card_description{
+            .card_subtitle{
+                @apply hidden;
+            }
+        }
+    }
+  }
+}
+//.spotify_app {
+// @apply grid grid-cols-[200px_minmax(900px,_1fr)_100px]
+//}

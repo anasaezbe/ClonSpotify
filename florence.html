@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <div id="app">
+      <div class="spotify_app">
+        <div class="spotify_variable_parts">
+          <header class="artist_header"> <!--Header-->
+            <a class="artist_header_return" href="/artists.html"><i class="bi bi-arrow-left"></i></a> <!--Botón de retorno-->
+            <div class="artist_header_name">Florence + The Mac...</div>
+            <div class="artist_header_info">
+                <div class="artist_info_following"><p>SIGUIENDO</p></div>
+                <div class="artist_info_more"><i class="bi bi-three-dots-vertical"></i></div>
+            </div>
+          </header>
+          <section class="artist_cover" style="background-image: url(/assets/img/Artist_Florence_+_The_Machine.jpg)">
+            <div class="artist_cover_bg" >
+                <h2 class="artist_title">Florence + The Machine</h2>
+            <p class="artist_monthly_listeners">12,441,459 OYENTES MENSUALES</p>
+            </div>
+            
+          </section>
+          <div class="cta">
+            <div class="folowing_button">MODO ALEATORIO</div> <!--Botón que será sticky-->
+          </div>
+          
+          <section class="artist_populars"> 
+            <h2 class="artist_popular_title">Populares</h2>
+            <article class="artist_popular_songs"> <!--Componente card-->
+                <div class="artist_song_description">
+                    <div class="song_placement">1</div>
+                    <div class="song_cover"><img src="/assets/img/Florence_+_The_Machine_-_Lungs.jpg" alt=""></div>
+                    <div class="song_basic_info">
+                        <div class="song_name">Dog Day's Are Over</div>
+                        <div class="song_clicked_times">628,317,833</div>
+                    </div>
+                </div>
+                <div class="artist_song_more"><i class="bi bi-three-dots-vertical"></i></div>
+            </article>
+            <article class="artist_popular_songs"> <!--Componente card-->
+                <div class="artist_song_description">
+                    <div class="song_placement">2</div>
+                    <div class="song_cover"><img src="/assets/img/Florence_+_The_Machine_-_Lungs.jpg" alt=""></div>
+                    <div class="song_basic_info">
+                        <div class="song_name">You've Got The Love</div>
+                        <div class="song_clicked_times">425,519,410</div>
+                    </div>
+                </div>
+                <div class="artist_song_more"><i class="bi bi-three-dots-vertical"></i></div>
+            </article>
+            <article class="artist_popular_songs"> <!--Componente card-->
+                <div class="artist_song_description">
+                    <div class="song_placement">3</div>
+                    <div class="song_cover"><img src="/assets/img/Florence_+_The_Machine_-_Ceremonials.jpg" alt=""></div>
+                    <div class="song_basic_info">
+                        <div class="song_name">Spectrum (Say My Name) - Calvin...</div>
+                        <div class="song_clicked_times">191,044,095</div>
+                    </div>
+                </div>
+                <div class="artist_song_more"><i class="bi bi-three-dots-vertical"></i></div>
+            </article>
+            <article class="artist_popular_songs"> <!--Componente card-->
+                <div class="artist_song_description">
+                    <div class="song_placement">4</div>
+                    <div class="song_cover"><img src="/assets/img/Florence_+_The_Machine_-_Dance_Fever.jpg" alt=""></div>
+                    <div class="song_basic_info">
+                        <div class="song_name">Free</div>
+                        <div class="song_clicked_times">31,774,991</div>
+                    </div>
+                </div>
+                <div class="artist_song_more"><i class="bi bi-three-dots-vertical"></i></div>
+            </article>
+            <article class="artist_popular_songs"> <!--Componente card-->
+                <div class="artist_song_description">
+                    <div class="song_placement">5</div>
+                    <div class="song_cover"><img src="/assets/img/Florence_+_The_Machine_-_Ceremonials.jpg" alt=""></div>
+                    <div class="song_basic_info">
+                        <div class="song_name">Shake It Out</div>
+                        <div class="song_clicked_times">335,783,906</div>
+                    </div>
+                </div>
+                <div class="artist_song_more"><i class="bi bi-three-dots-vertical"></i></div>
+            </article>
+          </section>
+          <section class="artist_recomendation"> <!--Selección de artista nueva sección-->
+            <h2 class="artist_recomendations_title">Selección del artista</h2>
+            <div class="recomendation_album">
+                <div class="image"><img src="/assets/img/Florence_+_The_Machine_-_Dance_Fever.jpg" alt=""></div>
+                <div class="recomendation_description">
+                    <div class="cta_recomendation">
+                        <div class="image">
+                            <img src="/assets/img/Florence_+_The_Machine_-_Dance_Fever.jpg" alt="">
+                        </div>                        
+                        <div class="p">Experience Dance Fever</div>
+                    </div>
+                    <div class="complete_info_recomendation">
+                        <div class="title_recomendation">Dance Fever</div>
+                    <div class="info_recomendation">Álbum</div>
+                    </div>
+                    
+                </div>
+            </div>
+          </section>
+          <section class="artist_popular_songs">
+            <h2 class="artist_popular_title">Títulos Populares</h2>
+            <div class="artist_popular_list">
+                <article class="horizontal_card"> <!--MISMO COMPONENTE QUE EN PLAYLIST-->
+                    <div class="horizontal_card_image">
+                        <img src="assets/img/Florence_+_The_Machine_-_Heaven_Is_Here.jpg" alt="">
+                    </div>
+                    <div class="horizontal_card_description">
+                        <div class="card_title">Heaven Is Here (IDLES Remix)</div>
+                        <div class="card_subtitle">último lanzamiento · Sencillo</div>
+                    </div>
+                </article>
+                <article class="horizontal_card">
+                    <div class="horizontal_card_image">
+                        <img src="assets/img/Florence_+_The_Machine_-_Lungs.jpg" alt="">
+                    </div>
+                    <div class="horizontal_card_description">
+                        <div class="card_title">Lungs (Deluxe Version)</div>
+                        <div class="card_subtitle">2009 · Álbum</div>
+                    </div>
+                </article>
+                <article class="horizontal_card">
+                    <div class="horizontal_card_image">
+                        <img src="assets/img/Florence_+_The_Machine_-_Dance_Fever.jpg" alt="">
+                    </div>
+                    <div class="horizontal_card_description">
+                        <div class="card_title">Dance Fever</div>
+                        <div class="card_subtitle">2022 · Álbum</div>
+                    </div>
+                </article>
+                <article class="horizontal_card mb-28"> <!--m-28 manualmente solo para que aparezca por encima del footer en la visualización-->
+                    <div class="horizontal_card_image">
+                        <img src="assets/img/Florence_+_The_Machine_-_Ceremonials.jpg" alt="">
+                    </div>
+                    <div class="horizontal_card_description">
+                        <div class="card_title">Ceremonials (Original Deluxe Version)</div>
+                        <div class="card_subtitle">2011 · Álbum</div>
+                    </div>
+                </article>
+            </div>
+          </section>
+        </div>
+        <div class="spotify_fixed_parts">
+          <footer class="footer_navbar">
+            <div class="listening_now"> <!--Lo he maquetado solo en este para que aparezca abierto-->
+                <div class="progress_line"></div>
+                <div class="listening_now_info">
+                    <div class="listening_mow_music">
+                        <div class="listening_album">
+                            <img src="/assets/img/Florence_+_The_Machine_-_Dance_Fever.jpg" alt="">
+                        </div>
+                        <div class="listening_info">
+                            <div class="music_title">
+                                Girls Against God
+                            </div>
+                            <div class="music_author">
+                                Florence + The Machine
+                            </div>
+                        </div>
+                    </div>
+                    <div class="listening_now_ctas">
+                        <div class="heart"><i class="bi bi-heart"></i></div>
+                        <div class="play"><i class="bi bi-play-fill"></i></div>
+                    </div>
+                </div>
+                <div class="separation_line"></div>
+                
+            </div>
+            <div class="navbar">
+              <ul class="icons_list">
+                <a class="option" href="index.html" >
+                  <div class="icon font-semibold" ><i class="bi bi-house-door"></i></div>
+                  <p class="font-semibold">Inicio</p>
+                </a>
+                <a class="option" href="">
+                  <div class="icon"><i class="bi bi-search"></i></div>
+                  <p>Buscar</p>
+                </a>
+                <a class="option" href="playlist.html">
+                  <div class="icon"><i class="bi bi-music-note-list"></i></div>
+                  <p>Tu biblioteca</p>
+                </a >
+              </ul>
+            </div>
+          </footer>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="/app/main.js"></script>
+  </body>
+</html>

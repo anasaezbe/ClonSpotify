@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <div id="app">
+      <div class="spotify_app">
+        <div class="spotify_variable_parts">
+          <header class="library_header">
+            <div class="library_header_ctas_1">
+                <a href="" class=" text-zinc-200">Música</a>
+                <a href="">Podcasts</a>
+            </div>
+            <div class="library_header_ctas_2">
+                <a href="/playlist.html" class="unselected">Playlists</a>
+                <a href="/artists.html" class="selected">Artistas</a> <!--Clase modificadora-->
+                <a href="" class="unselected">Álbumes</a>
+            </div>
+          </header>
+
+          <section class="playlist_options"> <!--Misma estructura que playlist-->
+            <article class="horizontal_card artist"> <!--Clase modificadora: ARTIST para ocultar el subtítulo y redondear las imágenes-->
+                <div class="horizontal_card_image">
+                    <img src="assets/img/Artist_Blue_October.jpg" alt="">
+                </div>
+                <div class="horizontal_card_description">
+                    <div class="card_title">Blue October</div>
+                    <div class="card_subtitle">de spotify</div>
+                </div>
+            </article>
+            <article class="horizontal_card artist">
+                <div class="horizontal_card_image">
+                    <img src="assets/img/Artist_C_Tangana.jpg" alt="">
+                </div>
+                <div class="horizontal_card_description">
+                    <div class="card_title">C. Tangana</div>
+                    <div class="card_subtitle">de spotify</div>
+                </div>
+            </article>
+            <article class="horizontal_card artist">
+                <div class="horizontal_card_image">
+                    <img src="assets/img/Artist_Declan_McKenna.jpg" alt="">
+                </div>
+                <div class="horizontal_card_description">
+                    <div class="card_title">Declan McKenna</div>
+                    <div class="card_subtitle">de maddiemoo0414</div>
+                </div>
+            </article>
+            <article class="horizontal_card artist">
+                <div class="horizontal_card_image">
+                    <img src="assets/img/Artist_Florence_+_The_Machine.jpg" alt="">
+                </div>
+                <div class="horizontal_card_description">
+                    <a href="/florence.html" class="card_title">Florence + The Machine</a>
+                    <div class="card_subtitle">de deeraria</div>
+                </div>
+            </article>
+            <article class="horizontal_card artist">
+                <div class="horizontal_card_image">
+                    <img src="assets/img/Artist_Guitarricadelafuente.jpg" alt="">
+                </div>
+                <div class="horizontal_card_description">
+                    <div class="card_title">Guitarricadelafuente</div>
+                    <div class="card_subtitle">de spotify</div>
+                </div>
+            </article>
+            <article class="horizontal_card artist">
+                <div class="horizontal_card_image">
+                    <img src="assets/img/Artist_Hozier.jpg" alt="">
+                </div>
+                <div class="horizontal_card_description">
+                    <div class="card_title">Hozier</div>
+                    <div class="card_subtitle">de spotify</div>
+                </div>
+            </article>
+            <article class="horizontal_card artist">
+                <div class="horizontal_card_image">
+                    <img src="assets/img/Artist_La_Maravillosa_Orquesta_Del_Alcohol.jpg" alt="">
+                </div>
+                <div class="horizontal_card_description">
+                    <div class="card_title">La Maravillosa Orquesta del Alcohol</div>
+                    <div class="card_subtitle">de aklek5e89a7pphvkpxfmrnuvt</div>
+                </div>
+            </article>
+            <article class="horizontal_card artist">
+                <div class="horizontal_card_image">
+                    <img src="assets/img/Artist_Mumford_And_Sons.jpg" alt="">
+                </div>
+                <div class="horizontal_card_description">
+                    <div class="card_title">Mumford & Sons</div>
+                    <div class="card_subtitle">de spotify</div>
+                </div>
+            </article>
+            <article class="horizontal_card artist">
+                <div class="horizontal_card_image">
+                    <img src="assets/img/Artist_ZAZ.jpg" alt="">
+                </div>
+                <div class="horizontal_card_description">
+                    <div class="card_title">Zaz</div>
+                    <div class="card_subtitle">de di90aklek5e89a58vhaj</div>
+                </div>
+            </article>
+            
+            
+          </section>
+        </div>
+        <div class="spotify_fixed_parts">
+          <footer class="footer_navbar">
+            <div class="listening_now"></div>
+            <div class="navbar">
+              <div class="icons_list">
+                <a class="option" href="index.html" >
+                  <div class="icon" ><i class="bi bi-house-door"></i></div>
+                  <p>Inicio</p>
+                </a>
+                <a class="option" href="">
+                  <div class="icon"><i class="bi bi-search"></i></div>
+                  <p>Buscar</p>
+                </a>
+                <a class="option" href="playlist.html">
+                  <div class="icon font-semibold"><i class="bi bi-music-note-list"></i></div>
+                  <p class="font-semibold">Tu biblioteca</p>
+                </a >
+              </div>
+            </div>
+          </footer>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="/app/main.js"></script>
+  </body>
+</html>

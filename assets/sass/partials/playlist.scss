@@ -1,0 +1,41 @@
+
+#app {
+    @apply overflow-y-scroll;
+  
+  }
+
+//playlist.html y artist.html comparten este mismo scss
+
+.spotify_app {
+  .spotify_variable_parts {
+    .library_header {
+      @apply flex flex-col gap-4;
+      @apply pt-6 pb-8;
+      
+
+      .library_header_ctas_1 {
+        @apply flex flex-row gap-8;
+        @apply text-2xl font-semibold;
+        @apply text-zinc-500;
+        
+        
+      }
+
+      .library_header_ctas_2 {
+        @apply flex flex-row gap-6;
+        @apply text-zinc-500;
+
+        .selected { //seleccionar si estas en artista, playlist o podcast
+            @apply text-zinc-200;
+            @apply underline decoration-2 underline-offset-8 decoration-green-500;
+        }
+      }
+
+    }
+    .playlist_options {
+      @apply flex flex-col gap-4;
+      //el resto de la página está en componentes
+      
+    }
+  }
+}

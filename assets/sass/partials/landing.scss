@@ -1,0 +1,112 @@
+
+#app {
+  @apply overflow-y-scroll;
+  @apply bg-contain bg-top bg-no-repeat bg-fixed ; //propiedades del fondo en landing solo
+  //bg-fixed no me lo coge por algun motivo y baja al hacer scroll  
+
+}
+
+.header { //título superior
+  @apply pt-6 pb-5;
+  @apply flex justify-between align-middle;
+  @apply text-zinc-200;
+
+  .title {
+    @apply text-2xl font-semibold;
+  }
+  .icons {
+    @apply flex gap-3 text-2xl;
+  }
+}
+
+.keep_listening { //grid de las seis pantallas de seguir escuchando
+  @apply grid grid-cols-2 grid-rows-3 gap-3;
+  @apply pb-7;
+
+  .card_listened {
+    @apply flex gap-3 pr-2;
+    @apply h-16 rounded-md;
+    @apply bg-[#2A2A2A];
+
+    .image {
+      @apply h-full flex-shrink-0;
+      img {
+        @apply h-full rounded-l-md;        
+      }
+    }
+    .name{
+      @apply flex self-center; 
+      @apply text-zinc-200 text-sm font-semibold;
+    }
+  }
+}
+
+.spotify_wrapped {
+  @apply flex gap-3 items-end;
+  @apply pb-7;
+  .image {
+    @apply w-56;
+  }
+  .description {
+    @apply  flex flex-col gap-2 pr-4;
+    .slogan {
+      @apply font-semibold text-base;
+    }
+    .wrapped_description {
+      @apply text-sm;
+    }
+  }
+}
+
+.new_populars {
+  @apply overflow-hidden; //he escondido las que se salían para que no apareciera el scroll
+  @apply pb-7;
+  .title {
+    @apply text-2xl font-semibold;
+    @apply mb-4;
+  }
+  .new_populars_body {
+    @apply flex gap-4;
+    .card_album_b_vertical {
+    }
+  }
+}
+
+.personal_recomendations {
+  @apply overflow-hidden; //para cortar lo que sobra y parezca un movil
+  @apply pb-7;
+  .title {
+    @apply text-2xl font-semibold;
+    @apply mb-4;
+  }
+  .personal_recomendations_body {
+    @apply flex gap-4;
+    .card_album_b_vertical {
+    }
+  }
+}
+
+.latest_listened{
+  @apply pb-10; //solo para que se vea por encima de la barra de navegación
+  .title{
+    @apply text-2xl font-semibold;
+    @apply mb-4;
+  }
+  .latest_listened_body{
+    @apply flex gap-4;
+    .card_album_m_vertical {
+      .image {
+        @apply w-28 mb-2;
+        img {
+          @apply flex-shrink-0;
+        }
+      }
+      .description {
+        @apply text-sm text-zinc-100;
+        p {
+        }
+      }
+    }
+  }
+
+}

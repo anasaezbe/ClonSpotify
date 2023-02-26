@@ -1,0 +1,144 @@
+.spotify_app {
+  .spotify_variable_parts {
+    .artist_header { //quería hacer que tuviera background al hacer el scroll pero no lo he conseguido :(
+      @apply flex flex-row justify-between items-center;
+      @apply fixed top-0;
+      max-width: 388px; //Una vez más si pongo w-full se sale del app
+        width: 100%;
+      @apply mt-2;
+      .artist_header_return {
+      }
+      .artist_header_name {
+      }
+      .artist_header_info {
+        @apply flex flex-row gap-2;
+        .artist_info_following {
+          @apply p-1 border-2 rounded-sm;
+          @apply text-xs;
+        }
+        .artist_info_more {
+        }
+      }
+    }
+    .artist_cover {
+      @apply h-80;
+      @apply bg-cover bg-center; //capa solo para poner la foto de florence
+      .artist_cover_bg {
+        @apply flex flex-col justify-end gap-5;
+        @apply h-full;
+        @apply bg-gradient-to-t from-zinc-900 z-20; //capa solo para poner el linear gradient
+        .artist_title {
+          @apply text-5xl font-semibold text-center;
+        }
+        .artist_monthly_listeners {
+          @apply text-xs text-center mb-6;
+        }
+      }
+    }
+
+    .cta {
+      @apply flex justify-center;
+      @apply sticky top-7; //lemento sticky que va suelto del flujo y se queda pegado arriba
+      .folowing_button {
+        @apply px-6 py-2;
+        @apply bg-green-500 rounded-full;
+        @apply text-sm font-semibold;
+      }
+    }
+    
+    .artist_populars {
+      @apply my-6;
+      .artist_popular_title {
+        @apply text-zinc-200;
+        @apply font-semibold text-lg text-center;
+        @apply mb-2;
+      }
+      .artist_popular_songs {
+        @apply flex flex-row justify-between items-center mb-2;
+        .artist_song_description {
+          @apply flex flex-row gap-1;
+          @apply justify-between items-center;
+
+          .song_placement {
+          }
+          .song_cover {
+            @apply h-14;
+            img {
+              @apply h-full;
+            }
+          }
+          .song_basic_info {
+            @apply flex flex-col;
+            .song_name {
+              @apply text-zinc-200;
+              @apply font-semibold text-base;
+            }
+            .song_clicked_times {
+              @apply text-xs text-zinc-400;
+            }
+          }
+        }
+        .artist_song_more {
+        }
+      }
+      
+    }
+
+    .artist_recomendation {
+        @apply my-10;
+        .artist_recomendations_title {
+          @apply font-semibold text-lg text-center;
+          @apply mb-2;
+        }
+        .recomendation_album{
+            @apply flex flex-row gap-4 content-center;
+            .image{
+                @apply w-24;
+                img{
+
+                }
+            }
+            .recomendation_description{
+                @apply flex flex-col justify-center gap-2;
+                .cta_recomendation{
+                    @apply flex flex-row gap-2;
+                    @apply p-1 rounded-full;
+                    @apply bg-zinc-100 text-zinc-900;
+                    .image{
+                        @apply w-5;
+                        img{
+                            @apply shrink-0 rounded-full;
+                        }
+                    }
+                    .p{
+                        @apply text-xs;
+                        @apply mr-2;
+                    }
+                }
+
+            }
+            .complete_info_recomendation{
+                .title_recomendation {
+                    @apply text-sm;
+                }
+                .info_recomendation{
+                    @apply text-xs;
+                }
+            }
+            
+        }
+      }
+      
+    .artist_popular_songs{
+        .artist_popular_title {
+            @apply font-semibold text-lg text-center;
+            @apply mb-2;
+        }
+        .artist_popular_list{
+            @apply flex flex-col gap-2;
+            //las canciones populares son componentes ya maquetados
+        }
+        
+    }
+  }
+}
